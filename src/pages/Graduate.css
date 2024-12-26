@@ -1,0 +1,134 @@
+.graduate-container {
+    width: 100%;
+    max-width: 390px;
+    height: 844px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+  
+  .graduate-header {
+    padding: 16px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .header-content {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .back-button {
+    border: none;
+    background: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .profile-section {
+    padding: 20px;
+  }
+  
+  .profile-card {
+    background-color: #ffd7d9;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .profile-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 12px;
+  }
+  
+  .profile-info h2 {
+    margin: 0;
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  
+  .profile-info p {
+    margin: 4px 0;
+    color: #666;
+  }
+  
+  .status-section {
+    padding: 0 20px;
+  }
+  
+  .status-block {
+    margin-bottom: 24px;
+  }
+  
+  .status-block h3 {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  
+  .status-block ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .status-block li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .status-info {
+    display: flex;
+    align-items: center;
+    min-width: 120px; /* 점수와 상태 표시 영역 최소 너비 설정 */
+    justify-content: flex-end; /* 오른쪽 정렬 */
+    gap: 12px;
+  }
+  
+  .count {
+    min-width: 30px; /* 점수 표시 영역 최소 너비 설정 */
+    text-align: right; /* 점수 우측 정렬 */
+  }
+  
+  .status-tag {
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    min-width: 60px; /* 상태 태그 최소 너비 */
+    text-align: center;
+  }
+  
+  /* 이수 완료 상태 추가 */
+  .status-tag.complete {
+    background-color: #e8f5e9;
+    color: #28a745;
+  }
+  
+  /* 인증 필요 상태 */
+  .status-tag.incomplete {
+    background-color: #ffebee;
+    color: #dc3545;
+  }
+  
+  
+  @media (max-width: 390px) {
+    .graduate-container {
+      height: 100vh;
+    }
+    
+    .profile-section,
+    .status-section {
+      padding: 16px;
+    }
+    
+    .profile-card {
+      padding: 16px;
+    }
+  }
+  

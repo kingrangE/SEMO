@@ -1,0 +1,91 @@
+/* App.css */
+
+/* 기본 CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  overflow: hidden; /* 화면 밖으로 나가지 않도록 설정 */
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 100%;
+  height: 100vh; /* 뷰포트 전체 높이 */
+  display: flex;
+  flex-direction: column;
+}
+
+/* 네비게이션 바 스타일 */
+nav {
+  background-color: #333;
+  padding: 10px;
+  height: 60px; /* 네비게이션 바 고정 높이 */
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  color: white;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* 공통 레이아웃 */
+.page-container {
+  flex: 1; /* 네비게이션 바 아래에서 남은 모든 공간을 차지 */
+  padding: 20px;
+  overflow-y: auto; /* 내용이 많을 경우 스크롤 허용 */
+}
+
+.home-page {
+  text-align: center;
+}
+
+.home-page h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+/* 반응형 스타일 */
+
+/* 화면이 768px 이하일 때 */
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden; /* 가로 스크롤 방지 */
+  }
+
+  nav ul li a {
+    font-size: 12px;
+  }
+
+  .home-page h1 {
+    font-size: 1.8rem;
+  }
+}
+
+/* 화면이 480px 이하일 때 (모바일) */
+@media screen and (max-width: 480px) {
+  nav ul li a {
+    font-size: 10px;
+  }
+
+  .home-page h1 {
+    font-size: 1.5rem;
+  }
+}

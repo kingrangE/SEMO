@@ -1,0 +1,39 @@
+/* ChatbotHistoryPage.css */
+
+.history-container {
+    width: 100%;
+    max-width: 390px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .history-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .history-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .history-item {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f4f4f4;
+  }
+  
+  .history-item h3 {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .history-item p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #666;
+  }
+  
